@@ -1,0 +1,9 @@
+# Robots.txt for Waparcel
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://waparcel.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to small servers)
+Crawl-delay: 10
