@@ -524,7 +524,7 @@ textarea { resize: vertical; min-height: 120px; }
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .footer-brand .logo,.footer-brand img { color: var(--white); margin-bottom: 16px; display: block; }
-.footer-brand p { font-size: 0.9rem; line-height: 1.7; max-width: 300px; }
+.footer-brand p { font-size: 0.9rem; line-height: 1.7; max-width: 300px; padding-left: 24px; }
 .footer-col h4 {
   font-family: var(--font-head);
   font-size: 1rem;
