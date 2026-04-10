@@ -609,28 +609,6 @@ textarea { resize: vertical; min-height: 120px; }
 .delay-4 { animation-delay: 0.4s; }
 .delay-5 { animation-delay: 0.5s; }
 
-/* ---- WhatsApp Float ---- */
-.wa-float {
-  position: fixed;
-  bottom: 32px;
-  left: 32px;
-  z-index: 900;
-  width: 60px; height: 60px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.8rem;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  transition: transform 0.2s;
-}
-.wa-float:hover { transform: scale(1.1); }
-
-/* ---- Responsive ---- */
-@media (max-width: 1024px) {
-  .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 }
