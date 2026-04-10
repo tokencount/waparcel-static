@@ -22,7 +22,7 @@
 
 html { scroll-behavior: smooth; font-size: 16px; }
 
-body {
+body { overflow-x: hidden;
   font-family: var(--font-body);
   color: var(--dark);
   line-height: 1.6;
@@ -638,7 +638,15 @@ textarea { resize: vertical; min-height: 120px; }
   .cta-section { padding: 48px 16px; }
   .cta-section h2 { font-size: 1.5rem; }
   .cta-section p { font-size: 0.95rem; }
-  .footer { padding: 24px 16px; overflow: visible; }
+  .footer { padding: 24px 16px; overflow: visible !important; max-width: 100%; }
+  .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-brand img { padding-left: 0 !important; }
+  .footer-brand p { padding-left: 0 !important; max-width: 100%; }
+  .footer-col h4 { font-size: 0.75rem; margin-bottom: 10px; }
+  .footer-col ul { gap: 6px; }
+  .footer-col li, .footer-col a { font-size: 0.75rem; line-height: 1.4; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; font-size: 0.7rem; padding: 16px 0 24px; overflow: visible !important; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-brand p { padding-left: 0; }
@@ -649,7 +657,7 @@ textarea { resize: vertical; min-height: 120px; }
   .footer-bottom span { overflow: visible; }
   .form-row { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-  body { padding-bottom: 0; }
+  body { overflow-x: hidden; padding-bottom: 0; }
 }
 
 
