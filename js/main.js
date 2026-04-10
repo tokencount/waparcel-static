@@ -41,6 +41,7 @@ if (animateEls.length) {
 // Form submission (client-side demo — wire up to Formspree / your backend)
 async function handleSubmit(e) {
   e.preventDefault();
+  e.stopPropagation();
   const form = document.getElementById('quoteForm');
   const btn = document.getElementById('submitBtn');
   if (!form) return;
@@ -49,12 +50,15 @@ async function handleSubmit(e) {
   btn.disabled = true;
 
   const formData = new FormData(form);
+  console.log('Submitting to Formspree...');
+  
   try {
     const response = await fetch('https://formspree.io/f/mvzvjkjy', {
       method: 'POST',
       body: formData,
       headers: { 'Accept': 'application/json' }
     });
+    console.log('Response status:', response.status);
     if (response.ok) {
       form.reset();
       btn.textContent = '✓ Sent!';
@@ -63,10 +67,13 @@ async function handleSubmit(e) {
         btn.disabled = false;
       }, 3000);
     } else {
+      const data = await response.json();
+      console.log('Error response:', data);
       btn.textContent = 'Error - Try Again';
       btn.disabled = false;
     }
   } catch (error) {
+    console.error('Fetch error:', error);
     btn.textContent = 'Error - Try Again';
     btn.disabled = false;
   }
