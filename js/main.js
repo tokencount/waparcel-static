@@ -78,7 +78,6 @@ async function handleSubmit(e) {
     btn.disabled = false;
   }
 }
-}
 
 // Header scroll effect
 window.addEventListener('scroll', () => {
