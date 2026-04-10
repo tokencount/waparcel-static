@@ -1,13 +1,13 @@
 /* ============================================
    WAPARCEL - Global Styles
    Modern, Professional Logistics Theme
-   Colors: Red #C41E3A, White, Dark #1e293b
+   Colors: Red #E50A47, White, Dark #1e293b
    ============================================ */
 
 :root {
-  --red: #C41E3A;
-  --red-dark: #A1232C;
-  --red-light: #DF1642;
+  --red: #E50A47;
+  --red-dark: #812529;
+  --red-light: #E50A47;
   --yellow: #ffcd57;
   --dark: #1e293b;
   --gray: #67768e;
