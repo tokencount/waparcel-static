@@ -39,30 +39,38 @@ if (animateEls.length) {
 }
 
 // Form submission (client-side demo — wire up to Formspree / your backend)
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
   const form = document.getElementById('quoteForm');
   const btn = document.getElementById('submitBtn');
   if (!form) return;
 
-  // Build mailto link
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
   const formData = new FormData(form);
-  const subject = encodeURIComponent('Quote Request from Waparcel Website');
-  const body = encodeURIComponent(
-    'Name: ' + (formData.get('name') || '') + '\n' +
-    'Email: ' + (formData.get('email') || '') + '\n' +
-    'Phone: ' + (formData.get('phone') || '') + '\n' +
-    'Company: ' + (formData.get('company') || '') + '\n' +
-    'Service: ' + (formData.get('service') || '') + '\n\n' +
-    'Message:\n' + (formData.get('message') || '')
-  );
-  window.location.href = 'mailto:waparcel@gmail.com?subject=' + subject + '&body=' + body;
-  
-  btn.textContent = '✓ Opening Email...';
-  setTimeout(() => {
-    btn.textContent = 'Send Request →';
-    form.reset();
-  }, 2000);
+  try {
+    const response = await fetch('https://formspree.io/f/mvzvjkjy', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.reset();
+      btn.textContent = '✓ Sent!';
+      setTimeout(() => {
+        btn.textContent = 'Send Request →';
+        btn.disabled = false;
+      }, 3000);
+    } else {
+      btn.textContent = 'Error - Try Again';
+      btn.disabled = false;
+    }
+  } catch (error) {
+    btn.textContent = 'Error - Try Again';
+    btn.disabled = false;
+  }
+}
 }
 
 // Header scroll effect
