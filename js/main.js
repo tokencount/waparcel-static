@@ -41,26 +41,28 @@ if (animateEls.length) {
 // Form submission (client-side demo — wire up to Formspree / your backend)
 function handleSubmit(e) {
   e.preventDefault();
-  const btn = document.getElementById('submitBtn');
   const form = document.getElementById('quoteForm');
+  const btn = document.getElementById('submitBtn');
   if (!form) return;
 
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  btn.style.opacity = '0.7';
-
-  // Simulate submission (replace with real endpoint)
+  // Build mailto link
+  const formData = new FormData(form);
+  const subject = encodeURIComponent('Quote Request from Waparcel Website');
+  const body = encodeURIComponent(
+    'Name: ' + (formData.get('name') || '') + '\n' +
+    'Email: ' + (formData.get('email') || '') + '\n' +
+    'Phone: ' + (formData.get('phone') || '') + '\n' +
+    'Company: ' + (formData.get('company') || '') + '\n' +
+    'Service: ' + (formData.get('service') || '') + '\n\n' +
+    'Message:\n' + (formData.get('message') || '')
+  );
+  window.location.href = 'mailto:waparcel@gmail.com?subject=' + subject + '&body=' + body;
+  
+  btn.textContent = '✓ Opening Email...';
   setTimeout(() => {
-    btn.textContent = '✓ Request Sent!';
-    btn.style.background = '#16a34a';
+    btn.textContent = 'Send Request →';
     form.reset();
-    setTimeout(() => {
-      btn.textContent = 'Send Request →';
-      btn.style.background = '';
-      btn.style.opacity = '';
-      btn.disabled = false;
-    }, 3000);
-  }, 1500);
+  }, 2000);
 }
 
 // Header scroll effect
