@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Waparcel — Get a free logistics quote for Malaysia-China shipping, warehousing, and fulfillment services.">
+  <title>Contact Us – WAPARCEL | Get a Free Quote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><div class="logo-icon">W</div><span>WAPARCEL</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Get Quote</a>
+    </nav>
+    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMobile()">Home</a>
+  <a href="services.html" onclick="toggleMobile()">Services</a>
+  <a href="about.html" onclick="toggleMobile()">About</a>
+  <a href="contact.html" onclick="toggleMobile()">Contact</a>
+  <a href="contact.html" class="nav-cta" onclick="toggleMobile()">Get Quote</a>
+</div>
+
+<!-- PAGE HERO -->
+<section style="background:var(--dark); padding:160px 0 80px; text-align:center; color:white;">
+  <div class="container">
+    <span class="hero-badge">Contact Us</span>
+    <h1 style="font-family:var(--font-head); font-size:clamp(2.5rem,5vw,3.5rem); font-weight:800; margin-top:16px; letter-spacing:-1px;">Get Your Free Quote</h1>
+    <p style="color:rgba(255,255,255,0.75); font-size:1.15rem; max-width:540px; margin:20px auto 0; line-height:1.7;">Fill in your details and we'll get back to you within 24 hours with a custom logistics plan.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div>
+        <h2 style="font-family:var(--font-head); font-size:1.8rem; font-weight:800; margin-bottom:8px;">Request a Quote</h2>
+        <p style="color:var(--gray); margin-bottom:32px; line-height:1.7;">Tell us about your business and logistics needs.</p>
+
+        <form class="contact-form" id="quoteForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Ah Seng" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your business name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp / Phone *</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 6012-3456789" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In *</label>
+            <select id="service" name="service" required>
+              <option value="">— Select a service —</option>
+              <option value="fulfillment">Fulfillment & Warehousing</option>
+              <option value="air-freight">Air Freight</option>
+              <option value="sea-freight">Sea Freight</option>
+              <option value="wholesale">Wholesale Purchasing</option>
+              <option value="company-reg">Company Registration</option>
+              <option value="agency">Agency Operation</option>
+              <option value="other">Other / Multiple</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Needs *</label>
+            <textarea id="message" name="message" rows="5" placeholder="e.g. I run a Shopee store selling electronics. Need fulfillment + air freight from Shenzhen, about 200 orders/day..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; text-align:center;" id="submitBtn">Send Request →</button>
+          <p style="font-size:0.85rem; color:var(--gray); margin-top:16px; text-align:center;">Or reach us directly via <a href="https://wa.me/60124294930" target="_blank" style="color:var(--red); font-weight:600;">WhatsApp: 6012-4294930</a></p>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div>
+        <h2 style="font-family:var(--font-head); font-size:1.8rem; font-weight:800; margin-bottom:32px;">Contact Information</h2>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <div class="contact-info-label">Phone / WhatsApp</div>
+            <div class="contact-info-value"><a href="tel:+60124294930">6012-4294930</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📧</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value"><a href="mailto:info@waparcel.com">info@waparcel.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <div class="contact-info-label">Warehouse Address</div>
+            <div class="contact-info-value">
+              Waparcel Warehouse<br>
+              PT12520 (Lot 2015), Jalan Anggerik,<br>
+              Kawasan Perusahaan, Kampung Jenjarom,<br>
+              42600 Jenjarom, Selangor, Malaysia
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💬</div>
+          <div>
+            <div class="contact-info-label">WeChat</div>
+            <div class="contact-info-value">
+              <img src="images/wechat-placeholder.png" alt="WeChat QR Code" style="height:120px; border-radius:8px; margin-top:8px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <span style="display:none; font-size:0.9rem; color:var(--gray);">Contact us via WhatsApp for WeChat QR</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px; padding:28px; background:var(--red); border-radius:16px; color:white;">
+          <h3 style="font-family:var(--font-head); font-weight:700; margin-bottom:8px;">⚡ Quick Response</h3>
+          <p style="font-size:0.95rem; opacity:0.9; line-height:1.7;">Most quotes are returned within 2 hours during business hours. For urgent matters, WhatsApp us directly.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon">W</div><span>WAPARCEL</span></div>
+        <p>Malaysia's leading China logistics partner.</p>
+      </div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Fulfillment</a></li><li><a href="services.html">Freight</a></li><li><a href="services.html">Wholesale</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+60124294930">📞 6012-4294930</a></li><li><a href="https://wa.me/60124294930" target="_blank">💬 WhatsApp</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Waparcel. All rights reserved.</span><a href="https://github.com/tokencount/waparcel-static" target="_blank">View Source</a></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/60124294930" class="wa-float" target="_blank">💬</a>
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
