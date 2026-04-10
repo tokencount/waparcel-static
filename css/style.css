@@ -635,7 +635,7 @@ textarea { resize: vertical; min-height: 120px; }
   .hero-desc { font-size: 0.9rem; }
   .hero-actions { flex-direction: column; gap: 10px; }
   .hero-actions .btn { width: 100%; box-sizing: border-box; }
-  .hero-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  .hero-stats { display: flex; flex-direction: column; gap: 12px; align-items: center; }
   .hero-stat { padding: 8px 4px; }
   .hero-stat-num { font-size: 1rem; }
   .hero-stat-label { font-size: 0.6rem; }
