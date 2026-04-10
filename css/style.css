@@ -619,6 +619,7 @@ textarea { resize: vertical; min-height: 120px; }
   .hero-stat-num { font-size: 1.5rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .footer { display: none; }
   .form-row { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
 }
