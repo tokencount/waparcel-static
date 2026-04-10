@@ -638,39 +638,20 @@ textarea { resize: vertical; min-height: 120px; }
   .cta-section { padding: 48px 16px; }
   .cta-section h2 { font-size: 1.5rem; }
   .cta-section p { font-size: 0.95rem; }
-  .footer { padding: 32px 16px 0; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .footer { padding: 24px 16px; overflow: visible; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-brand p { padding-left: 0; }
-  .footer-col h4 { font-size: 0.8rem; margin-bottom: 12px; }
-  .footer-col ul { gap: 8px; }
-  .footer-col li, .footer-col a { font-size: 0.8rem; }
-  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; font-size: 0.75rem; padding: 16px 0; }
+  .footer-col h4 { font-size: 0.75rem; margin-bottom: 10px; }
+  .footer-col ul { gap: 6px; }
+  .footer-col li, .footer-col a { font-size: 0.75rem; line-height: 1.4; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; font-size: 0.7rem; padding: 16px 0 24px; }
+  .footer-bottom span { overflow: visible; }
   .form-row { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   body { padding-bottom: 0; }
 }
 
-
-/* Mobile Fixes */
-@media (max-width: 768px) {
-  .header { padding: 8px 16px; }
-  .header-inner { height: 56px; }
-  .mobile-menu { top: 56px; }
-  .mobile-menu a { padding: 12px 16px; font-size: 1rem; }
-  .nav-cta { padding: 6px 10px; font-size: 0.75rem; }
-  .hero { padding-top: 80px; }
-  .nav a { font-size: 0.85rem; padding: 0 8px; }
-  .nav-cta { padding: 8px 12px; font-size: 0.8rem; }
-  .hero { padding: 100px 16px 120px; }
-  .hero-stats { margin-bottom: 40px; }
-  .section { padding: 48px 16px; }
-  .services-grid { gap: 16px; }
-  .service-card { padding: 20px; }
-  .cta-section { padding: 48px 16px; }
-  .cta-section h2 { font-size: 1.8rem; }
-  body { padding-bottom: env(safe-area-inset-bottom, 20px); }
-}
 
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; }
