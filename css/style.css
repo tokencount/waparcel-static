@@ -609,7 +609,7 @@ textarea { resize: vertical; min-height: 120px; }
 .delay-4 { animation-delay: 0.4s; }
 .delay-5 { animation-delay: 0.5s; }
 
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; }
   .contact-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
