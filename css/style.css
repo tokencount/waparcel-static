@@ -627,7 +627,12 @@ textarea { resize: vertical; min-height: 120px; }
 
 /* Mobile Fixes */
 @media (max-width: 768px) {
-  .header { padding: 12px 16px; }
+  .header { padding: 8px 16px; }
+  .header-inner { height: 56px; }
+  .mobile-menu { top: 56px; }
+  .mobile-menu a { padding: 12px 16px; font-size: 1rem; }
+  .nav-cta { padding: 6px 10px; font-size: 0.75rem; }
+  .hero { padding-top: 80px; }
   .nav a { font-size: 0.85rem; padding: 0 8px; }
   .nav-cta { padding: 8px 12px; font-size: 0.8rem; }
   .hero { padding: 100px 16px 120px; }
