@@ -704,3 +704,7 @@ textarea { resize: vertical; min-height: 120px; }
   .services-page ul { text-align: left; }
   .services-page p { font-size: 0.9rem; text-align: center; }
 }
+/* About page - mobile: hide big stats box only */
+@media (max-width: 768px) {
+  .about-image, .about-image-inner .big-num, .about-image .stats-grid { display: none !important; }
+}
