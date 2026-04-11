@@ -614,6 +614,12 @@ textarea { resize: vertical; min-height: 120px; }
   .footer-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; }
   .contact-grid { grid-template-columns: 1fr; }
 }
+  /* SIRIM section - single column on mobile */
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; gap: 24px !important; margin-top: 40px !important; }
+  [style*="grid-template-columns:1fr 1fr"] > div:last-child { display: none; }
+  [style*="grid-template-columns:1fr 1fr"] + [style] { margin-top: 0 !important; }
+}
+
 @media (max-width: 768px) {
   /* Reset to prevent cut off */
   *, *::before, *::after { box-sizing: border-box; }
