@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
       <!-- Live Streaming -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-top:80px;">
+      <div class="sirim-section" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-top:80px;">
         <div style="background:var(--light-bg); border-radius:24px; padding:60px; text-align:center; aspect-ratio:1; display:flex; align-items:center; justify-content:center;">
           <div>
             <div style="font-size:5rem;">📱</div>
@@ -259,13 +259,7 @@ document.addEventListener("DOMContentLoaded",function(){
       </div>
 
       <!-- SIRIM -->
-<style>
-@media (max-width: 768px) {
-  .sirim-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
-  .sirim-img { display: none !important; }
-}
-</style>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-top:80px;">
+      <div class="sirim-section" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin-top:80px;">
         <div>
           <span style="color:var(--red); font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:1.5px;">07 — Certification</span>
           <h2 style="font-family:var(--font-head); font-size:2rem; font-weight:800; margin:12px 0 16px;">SIRIM Product Certification</h2>
@@ -340,5 +334,19 @@ document.addEventListener("DOMContentLoaded",function(){
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0a7e1320b04f4603828171eef7c8d79c"}'></script>
 <!-- End Cloudflare Web Analytics -->
 
+
+<style>
+@media (max-width: 768px) {
+  .sirim-section { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .sirim-section .sirim-img { display: none !important; }
+}
+</style>
+
+<style>
+@media (max-width: 768px) {
+  .sirim-section { grid-template-columns: 1fr !important; gap: 24px !important; margin-top: 40px !important; }
+  .sirim-section > div:last-child { display: none !important; }
+}
+</style>
 </body>
     </html>

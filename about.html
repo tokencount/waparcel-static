@@ -46,10 +46,13 @@
   .footer-col h4 { text-align: center !important; }
   .footer-col ul { justify-content: center !important; }
   
-  /* About page - hide on mobile */
+  /* About page - show images on desktop */
+  img { max-width: 100%; height: auto; }
+}
+
+@media (max-width: 768px) {
   .about-image { display: none !important; }
   .about-features, .about-feature { display: none !important; }
-  img { max-width: 100%; height: auto; }
 }
 </style>
 </head>

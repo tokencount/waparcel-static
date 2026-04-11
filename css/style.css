@@ -614,11 +614,7 @@ textarea { resize: vertical; min-height: 120px; }
   .footer-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; }
   .contact-grid { grid-template-columns: 1fr; }
 }
-  /* SIRIM section - single column on mobile */
-  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; gap: 24px !important; margin-top: 40px !important; }
-  [style*="grid-template-columns:1fr 1fr"] > div:last-child { display: none; }
-  [style*="grid-template-columns:1fr 1fr"] + [style] { margin-top: 0 !important; }
-}
+
 
 @media (max-width: 768px) {
   /* Reset to prevent cut off */
@@ -657,9 +653,7 @@ textarea { resize: vertical; min-height: 120px; }
   .services-grid { display: flex; flex-direction: column; gap: 16px; width: 100%; }
   .service-card { width: 100%; box-sizing: border-box; }
   
-  /* About page images - hide on mobile */
-  .about-img, .about-grid img { display: none !important; }
-  .about-section { padding: 40px 16px !important; }
+
   .service-card { padding: 16px 12px; box-sizing: border-box; }
   .service-icon { font-size: 1.5rem; }
   .service-title { font-size: 1rem; }
