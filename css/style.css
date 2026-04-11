@@ -647,8 +647,13 @@ textarea { resize: vertical; min-height: 120px; }
   .section-title { font-size: 1.4rem; }
   .section-subtitle { font-size: 0.9rem; }
   
-  /* Services Grid */
-  .services-grid { display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%; }
+  /* Services Grid - 1 column on mobile */
+  .services-grid { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+  .service-card { width: 100%; box-sizing: border-box; }
+  
+  /* About page images - hide on mobile */
+  .about-img, .about-grid img { display: none !important; }
+  .about-section { padding: 40px 16px !important; }
   .service-card { padding: 16px 12px; box-sizing: border-box; }
   .service-icon { font-size: 1.5rem; }
   .service-title { font-size: 1rem; }
