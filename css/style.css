@@ -688,7 +688,7 @@ textarea { resize: vertical; min-height: 120px; }
   .contact-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 
-/* Services page - mobile: text only, no images */
+/* Services page - mobile: text only, hide all icons */
 @media (max-width: 768px) {
   .services-page [style*="grid-template-columns:1fr 1fr"] { 
     grid-template-columns: 1fr !important; 
@@ -698,6 +698,9 @@ textarea { resize: vertical; min-height: 120px; }
     display: none !important; 
   }
   .services-page [style*="border-radius:24px"] { 
+    display: none !important; 
+  }
+  .services-page [style*="padding:60px"] { 
     display: none !important; 
   }
   .services-page h2 { font-size: 1.3rem; text-align: center; }
