@@ -690,16 +690,15 @@ textarea { resize: vertical; min-height: 120px; }
 
 /* Services page - mobile: 1 column, all centered */
 @media (max-width: 768px) {
-  .section .container > div > div { display: block !important; width: 100% !important; padding: 0 16px !important; box-sizing: border-box !important; }
-  .section .container > div > div > div[style*="grid"] { display: block !important; width: 100% !important; }
-  .section .container > div > div > div[style*="grid"] > div:last-child { display: none !important; }
-  .section h2 { font-size: 1.3rem !important; text-align: center !important; }
-  .section p { font-size: 0.9rem !important; text-align: center !important; }
-  .section ul { text-align: center !important; padding: 0 !important; }
-  .section li { text-align: center !important; }
-  .section a[href*="contact"] { display: block !important; text-align: center !important; width: 80% !important; margin: 16px auto !important; }
-  .section span[style*="uppercase"] { display: block !important; text-align: center !important; }
-  div[style*="linear-gradient"], div[style*="aspect-ratio"], div[style*="border-radius"] { display: none !important; }
+  #services .section .container > div > div { display: block !important; width: 100% !important; padding: 0 16px !important; box-sizing: border-box !important; }
+  #services .section .container > div > div > div[style*="grid"] { display: block !important; width: 100% !important; }
+  #services .section .container > div > div > div[style*="grid"] > div:last-child { display: none !important; }
+  #services .section h2 { font-size: 1.3rem !important; text-align: center !important; }
+  #services .section p { font-size: 0.9rem !important; text-align: center !important; }
+  #services .section ul { text-align: center !important; padding: 0 !important; }
+  #services .section li { text-align: center !important; }
+  #services .section a[href*="contact"] { display: block !important; text-align: center !important; width: 80% !important; margin: 16px auto !important; }
+  #services .section span[style*="uppercase"] { display: block !important; text-align: center !important; }
 }
 /* About page - mobile: hide big stats box only */
 @media (max-width: 768px) {
@@ -717,14 +716,13 @@ textarea { resize: vertical; min-height: 120px; }
   }
 }/* Services page - mobile: 1 column, all centered */
 @media (max-width: 768px) {
-  .section .container > div > div { display: block !important; width: 100% !important; padding: 0 16px !important; box-sizing: border-box !important; }
-  .section .container > div > div > div[style*="grid"] { display: block !important; width: 100% !important; }
-  .section .container > div > div > div[style*="grid"] > div:last-child { display: none !important; }
-  .section h2 { font-size: 1.3rem !important; text-align: center !important; }
-  .section p { font-size: 0.9rem !important; text-align: center !important; }
-  .section ul { text-align: center !important; padding: 0 !important; }
-  .section li { text-align: center !important; }
-  .section a[href*="contact"] { display: block !important; text-align: center !important; width: 80% !important; margin: 16px auto !important; }
-  .section span[style*="uppercase"] { display: block !important; text-align: center !important; }
-  div[style*="linear-gradient"], div[style*="aspect-ratio"], div[style*="border-radius"] { display: none !important; }
+  #services .section .container > div > div { display: block !important; width: 100% !important; padding: 0 16px !important; box-sizing: border-box !important; }
+  #services .section .container > div > div > div[style*="grid"] { display: block !important; width: 100% !important; }
+  #services .section .container > div > div > div[style*="grid"] > div:last-child { display: none !important; }
+  #services .section h2 { font-size: 1.3rem !important; text-align: center !important; }
+  #services .section p { font-size: 0.9rem !important; text-align: center !important; }
+  #services .section ul { text-align: center !important; padding: 0 !important; }
+  #services .section li { text-align: center !important; }
+  #services .section a[href*="contact"] { display: block !important; text-align: center !important; width: 80% !important; margin: 16px auto !important; }
+  #services .section span[style*="uppercase"] { display: block !important; text-align: center !important; }
 }
