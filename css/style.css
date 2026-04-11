@@ -708,13 +708,15 @@ textarea { resize: vertical; min-height: 120px; }
 @media (max-width: 768px) {
   .about-image, .about-image-inner .big-num, .about-image .stats-grid { display: none !important; }
 }
-/* About page - mobile: center content with margin */
+/* About page - mobile: center hero content */
 @media (max-width: 768px) {
-  .about .container, .about-content { 
+  .about-hero, .about section:first-of-type { 
+    text-align: center !important; 
     padding-left: 16px !important; 
     padding-right: 16px !important; 
   }
-  .about h2, .about p, .about ul { 
+  .about-hero h1, .about-hero h2, .about-hero p { 
     text-align: center !important; 
+    max-width: 100% !important; 
   }
 }
