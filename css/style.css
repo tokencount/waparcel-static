@@ -687,3 +687,21 @@ textarea { resize: vertical; min-height: 120px; }
   .form-row { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 24px; }
 }
+
+/* Services page - mobile: text only, centered */
+@media (max-width: 768px) {
+  .services-page .service-item { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 24px 16px; 
+  }
+  .services-page .service-item img, 
+  .services-page .service-icon img,
+  .services-page img { display: none !important; }
+  .services-page .service-icon { font-size: 3rem; margin-bottom: 12px; }
+  .services-page .service-content { max-width: 100%; }
+  .services-page h2 { font-size: 1.5rem; }
+  .services-page p { font-size: 0.9rem; }
+}
