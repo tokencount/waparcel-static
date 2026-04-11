@@ -49,7 +49,11 @@
 
   /* Hide images on mobile */
   img { max-width: 100% !important; height: auto !important; object-fit: contain; }
-  .service-card img, .about-img, .section img, .stats-grid img { display: none !important; }
+  .service-card img, .about-img, .section img, .stats-grid   img { max-width: 100%; height: auto; }
+}
+
+@media (max-width: 768px) {
+  img { display: none !important; }
   .about-image, .about-features, .about-feature { display: none !important; }
   /* About page - center features */
   .about-features { display: flex; flex-direction: column; gap: 20px; }
@@ -64,7 +68,11 @@
     .about-feature-icon { font-size: 2.5rem; margin-bottom: 8px; }
     .about-feature h4, .about-feature p { text-align: center !important; }
     .about-feature > div { width: 100%; }
-    img { display: none !important; }
+      img { max-width: 100%; height: auto; }
+}
+
+@media (max-width: 768px) {
+  img { display: none !important; }
   .about-image, .about-features, .about-feature { display: none !important; }
   }
 </style>
