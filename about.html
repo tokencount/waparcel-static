@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="css/style.css">
 <style>
 @media (max-width: 768px) { 
-  /* Simple mobile header */
+  /* Header */
   .header { display: block !important; visibility: visible !important; height: auto !important; padding: 10px 16px !important; position: relative !important; background: #E50A47; } 
   .header-inner { display: flex; align-items: center; justify-content: space-between; height: auto; }
   .nav { display: none !important; } 
@@ -40,41 +40,17 @@
   .footer-grid { display: flex !important; flex-direction: column !important; gap: 24px; text-align: center !important; }
   .footer-grid > div { text-align: center !important; width: 100%; }
   .footer-brand { text-align: center !important; }
-  .footer-brand img { display: block !important; margin-left: auto !important; margin-right: auto !important; }
+  .footer-brand img { display: block !important; margin-left: auto !important; margin-right: auto !important; height: 32px; }
   .footer-brand p { text-align: center !important; }
   .footer-col { text-align: center !important; }
   .footer-col h4 { text-align: center !important; }
   .footer-col ul { justify-content: center !important; }
-}
-
-  /* Hide images on mobile */
-  img { max-width: 100% !important; height: auto !important; object-fit: contain; }
-  .service-card img, .about-img, .section img, .stats-grid   img { max-width: 100%; height: auto; }
-}
-
-@media (max-width: 768px) {
-  img { display: none !important; }
-  .about-image, .about-features, .about-feature { display: none !important; }
-  /* About page - center features */
-  .about-features { display: flex; flex-direction: column; gap: 20px; }
-  .about-feature { display: flex; align-items: center; gap: 16px; padding: 16px; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
-  .about-feature-icon { font-size: 2rem; flex-shrink: 0; }
-  .about-feature h4, .about-feature p { text-align: left; }
   
-  /* About page mobile */
-  @media (max-width: 768px) {
-    .about-features { padding: 0 16px; }
-    .about-feature { flex-direction: column; text-align: center; padding: 20px; }
-    .about-feature-icon { font-size: 2.5rem; margin-bottom: 8px; }
-    .about-feature h4, .about-feature p { text-align: center !important; }
-    .about-feature > div { width: 100%; }
-      img { max-width: 100%; height: auto; }
+  /* About page - hide on mobile */
+  .about-image { display: none !important; }
+  .about-features, .about-feature { display: none !important; }
+  img { max-width: 100%; height: auto; }
 }
-
-@media (max-width: 768px) {
-  img { display: none !important; }
-  .about-image, .about-features, .about-feature { display: none !important; }
-  }
 </style>
 </head>
 <body>
