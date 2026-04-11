@@ -76,6 +76,27 @@
     </button>
   </div>
 </header>
+<!-- Mobile Menu -->
+<div id="mobileMenuOverlay" style="display:none; position:fixed; top:50px; left:0; right:0; bottom:0; background:#E50A47; z-index:998; padding:20px;">
+  <div style="display:flex; flex-direction:column; gap:8px;">
+    <a href="index.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">Home</a>
+    <a href="services.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">Services</a>
+    <a href="about.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">About</a>
+    <a href="contact.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">Contact</a>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var toggle=document.querySelector(".mobile-toggle");
+  var menu=document.getElementById("mobileMenuOverlay");
+  if(toggle&&menu){
+    toggle.addEventListener("click",function(){
+      menu.style.display=menu.style.display==="block"?"none":"block";
+    });
+  }
+});
+</script>
+
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
