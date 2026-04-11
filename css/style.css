@@ -708,3 +708,13 @@ textarea { resize: vertical; min-height: 120px; }
 @media (max-width: 768px) {
   .about-image, .about-image-inner .big-num, .about-image .stats-grid { display: none !important; }
 }
+/* About page - mobile: center content with margin */
+@media (max-width: 768px) {
+  .about .container, .about-content { 
+    padding-left: 16px !important; 
+    padding-right: 16px !important; 
+  }
+  .about h2, .about p, .about ul { 
+    text-align: center !important; 
+  }
+}
