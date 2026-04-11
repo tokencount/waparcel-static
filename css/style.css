@@ -711,15 +711,14 @@ textarea { resize: vertical; min-height: 120px; }
 @media (max-width: 768px) {
   .about-image, .about-image-inner .big-num, .about-image .stats-grid { display: none !important; }
 }
-/* About page - mobile: center hero content */
+/* About page - mobile: center all content */
 @media (max-width: 768px) {
-  .about-hero, .about section:first-of-type { 
+  .about, .about-hero, .about-content, .about section { 
     text-align: center !important; 
     padding-left: 16px !important; 
     padding-right: 16px !important; 
   }
-  .about-hero h1, .about-hero h2, .about-hero p { 
+  .about h1, .about h2, .about h3, .about p, .about li { 
     text-align: center !important; 
-    max-width: 100% !important; 
   }
 }
