@@ -688,17 +688,19 @@ textarea { resize: vertical; min-height: 120px; }
   .contact-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 
-/* Services page - mobile: center text and images */
+/* Services page - mobile: text only, no images */
 @media (max-width: 768px) {
-  .services-page .service-item { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    padding: 24px 16px; 
+  .services-page [style*="grid-template-columns:1fr 1fr"] { 
+    grid-template-columns: 1fr !important; 
+    gap: 24px !important; 
   }
-  .services-page .service-icon { font-size: 3rem; margin-bottom: 12px; }
-  .services-page .service-content { max-width: 100%; }
-  .services-page h2 { font-size: 1.5rem; }
-  .services-page p { font-size: 0.9rem; }
+  .services-page [style*="aspect-ratio"] { 
+    display: none !important; 
+  }
+  .services-page [style*="border-radius:24px"] { 
+    display: none !important; 
+  }
+  .services-page h2 { font-size: 1.3rem; text-align: center; }
+  .services-page ul { text-align: left; }
+  .services-page p { font-size: 0.9rem; text-align: center; }
 }
