@@ -721,4 +721,9 @@ textarea { resize: vertical; min-height: 120px; }
   .about h1, .about h2, .about h3, .about p, .about li { 
     text-align: center !important; 
   }
+}/* Services page - mobile: hide all icon boxes */
+@media (max-width: 768px) {
+  div[style*="linear-gradient"] { display: none !important; }
+  div[style*="aspect-ratio"] { display: none !important; }
+  .service-icon { display: none !important; }
 }
