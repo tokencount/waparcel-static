@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-65H1P3PLHP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-65H1P3PLHP');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About WAPARCEL – China-Malaysia Logistics Partner</title>
-  <meta name="description" content="Waparcel is Malaysia's trusted China logistics partner since 2020. 20,000 sqm warehouse, 30,000+ daily orders. We handle air freight, sea freight, fulfillment, and more.">
-  <link rel="canonical" href="https://waparcel.com/about.html">
-  <meta property="og:title" content="About Waparcel – Your China-Malaysia Logistics Partner">
-  <meta property="og:description" content="Learn about Waparcel - Malaysia's leading China logistics company with 20,000 sqm warehouse and 30,000+ daily orders.">
-  <meta property="og:url" content="https://waparcel.com/about.html">
   <meta name="description" content="About Waparcel — Malaysia's trusted China logistics partner. 20,000 sqm warehouse, serving 30,000+ orders daily across Malaysia and China.">
   <title>About Us – WAPARCEL | China-Malaysia Logistics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -41,27 +26,6 @@
     </button>
   </div>
 </header>
-<!-- Mobile Menu -->
-<div id="mobileMenuOverlay" style="display:none; position:fixed; top:50px; left:0; right:0; bottom:0; background:#E50A47; z-index:998; padding:20px;">
-  <div style="display:flex; flex-direction:column; gap:8px;">
-    <a href="index.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">Home</a>
-    <a href="services.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">Services</a>
-    <a href="about.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">About</a>
-    <a href="contact.html" style="color:white; padding:14px 20px; text-decoration:none; font-size:1rem; border-radius:8px; background:rgba(255,255,255,0.1);">Contact</a>
-  </div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded",function(){
-  var toggle=document.querySelector(".mobile-toggle");
-  var menu=document.getElementById("mobileMenuOverlay");
-  if(toggle&&menu){
-    toggle.addEventListener("click",function(){
-      menu.style.display=menu.style.display==="block"?"none":"block";
-    });
-  }
-});
-</script>
-
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" onclick="toggleMobile()">Home</a>
   <a href="services.html" onclick="toggleMobile()">Services</a>
@@ -83,7 +47,22 @@ document.addEventListener("DOMContentLoaded",function(){
 <section class="section">
   <div class="container">
     <div class="about-grid">
-
+      <div class="about-image">
+        <div class="about-image-inner">
+          <div class="big-num">20,000</div>
+          <p>Square Meters of Warehouse Space</p>
+          <div style="margin-top:32px; display:grid; grid-template-columns:1fr 1fr; gap:16px; text-align:center;">
+            <div>
+              <div style="font-size:2.5rem; font-weight:900; color:var(--yellow); font-family:var(--font-head);">30,000+</div>
+              <div style="font-size:0.9rem; opacity:0.8;">Daily Orders</div>
+            </div>
+            <div>
+              <div style="font-size:2.5rem; font-weight:900; color:var(--yellow); font-family:var(--font-head);">24/7</div>
+              <div style="font-size:0.9rem; opacity:0.8;">Monitoring</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
         <span class="section-label">Our Story</span>
         <h2 style="font-family:var(--font-head); font-size:2.2rem; font-weight:800; margin:16px 0 24px; letter-spacing:-0.5px;">Built for Entrepreneurs Who Move Fast</h2>
@@ -163,46 +142,23 @@ document.addEventListener("DOMContentLoaded",function(){
   </div>
 </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="images/logo.png" alt="WAPARCEL" height="40">
-          <p>Your trusted China–Malaysia logistics partner. From warehouse to doorstep, we handle it all.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Fulfillment & Warehouse</a></li>
-            <li><a href="services.html">Air & Sea Freight</a></li>
-            <li><a href="services.html">Wholesale Sourcing</a></li>
-            <li><a href="services.html">Customs Clearance</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li>📧 waparcel@gmail.com</li>
-            <li>📍 Selangor, Malaysia</li>
-          </ul>
-        </div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="images/logo.png" alt="WAPARCEL" height="40"></div>
+        <p>Malaysia's leading China logistics partner.</p>
       </div>
-      <div class="footer-bottom"><span>© 2026 Waparcel. All rights reserved.</span></div>
-    </footer>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Fulfillment</a></li><li><a href="services.html">Freight</a></li><li><a href="services.html">Wholesale</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+60124294930">📞 6012-4294930</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Waparcel. All rights reserved.</span><a href="https://github.com/tokencount/waparcel-static" target="_blank">View Source</a></div>
+  </div>
+</footer>
 
-    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-    <script src="js/main.js"></script>
-    
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0a7e1320b04f4603828171eef7c8d79c"}'></script>
-<!-- End Cloudflare Web Analytics -->
 
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script src="js/main.js"></script>
 </body>
-    </html>
+</html>
